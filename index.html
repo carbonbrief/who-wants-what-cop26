@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The world’s ‘green recovery’ plans to cut emissions after coronavirus</title>
+  <title>Who wants what at COP26</title>
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -37,6 +37,7 @@
         <th>Topic</th>
         <th>Issue</th>
         <th>Position</th>
+        <th>Rank</th>
       </tr>
     </thead>
     <tbody id="table">
@@ -45,7 +46,7 @@
 </div>
 
 <script>
-$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1ZEOo9tBdXrzQHSXgSvGHWwMV0XeXjmwx-3H7_tW_ySc/values/COP26!A1:D?alt=json&key=AIzaSyB0QfnIL-dXwkL6PI05tn0LaiLPD1MqZG0", function (data) {
+$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1ZEOo9tBdXrzQHSXgSvGHWwMV0XeXjmwx-3H7_tW_ySc/values/COP26!A1:H?alt=json&key=AIzaSyB0QfnIL-dXwkL6PI05tn0LaiLPD1MqZG0", function (data) {
       var sheetData = data.values;
       var i;
       for (i = 1; i < sheetData.length; i++) {
@@ -53,12 +54,14 @@ $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1ZEOo9tBdXrzQHSXgSvGHWw
         var topic = sheetData[i][1];
         var issue = sheetData[i][2];
         var position = sheetData[i][3];
+        var rank = sheetData[i][7];
 
         table.row.add([
           blocCountry,
           topic,
           issue,
           position,
+          rank,
         ]).draw( false );
       }
 
@@ -102,7 +105,9 @@ $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1ZEOo9tBdXrzQHSXgSvGHWw
   },
 
   columnDefs: [
-      { bSortable: false, targets: [3] },
+      { visible: false, targets: [4] },
+      { "orderData":[ 4 ],   "targets": [ 3 ] },
+      {data: undefined, defaultContent: "", targets: [0, 1, 2, 3]}
   ],
   "order": [[ 1, "asc" ]],
   "lengthMenu": [[12, 24, 48, -1], [12, 24, 48, "All"]],
