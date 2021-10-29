@@ -369,3 +369,19 @@ div.dataTables_wrapper div .dataTables_filter{
 
 .red-line{background-color:rgba(199, 67, 43, 0.75)}
 
+td.high-p.sorting_1{background-color:rgba(48, 141, 81, 0.75)}
+
+td.priority.sorting_1{background-color:rgba(96, 179, 107, 0.75)}
+
+td.support.sorting_1{background-color:rgba(221, 240, 183, 0.75)}
+
+td.accept.sorting_1{background-color:rgba(209, 209, 209, 0.8)}
+
+td.not-support.sorting_1{background-color:rgba(239, 197, 48, 0.75)}
+
+td.oppose.sorting_1{background-color:rgba(232, 173, 54, 0.75)}
+
+td.strongly-opp.sorting_1{background-color:rgba(221, 138, 62, 0.75)}
+
+td.red-line.sorting_1{background-color:rgba(199, 67, 43, 0.75)}
+
