@@ -1,0 +1,371 @@
+div.dataTables_wrapper div.dataTables_length select,
+div.dataTables_wrapper div.dataTables_length input {
+    width: auto;
+}
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+}
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select span,
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row .select-wrapper.mdb-select .select-dropdown {
+    margin-top: 1rem;
+}
+div.dataTables_wrapper div.dataTables_length label,
+div.dataTables_wrapper div.dataTables_filter label {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+    text-align: left;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: right;
+    margin-right: 1.5em;
+}
+div.dataTables_wrapper div.dataTables_filter select,
+div.dataTables_wrapper div.dataTables_filter input {
+    width: auto;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+div.dataTables_wrapper div.dataTables_info,
+div.dataTables_wrapper div.dataTables_paginate {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    text-align: right;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+    background-color: #4285f4;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item .page-link:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+@media (max-width: 767px) {
+    div.dataTables_wrapper div .dataTables_length,
+    div.dataTables_wrapper div .dataTables_filter,
+    div.dataTables_wrapper div .dataTables_info,
+    div.dataTables_wrapper div .dataTables_paginate ul.pagination {
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -webkit-box-pack: center;
+    }
+}
+.bs-select select {
+    display: inline-block !important;
+}
+table.dataTable thead {
+    cursor: pointer;
+}
+table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+    padding-right: 30px;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+    outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+    position: relative;
+    cursor: pointer;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 0.9em;
+    display: block;
+    opacity: 0.3;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+    right: 1em;
+    font-family: FontAwesome, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0de";
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    right: 16px;
+    font-family: FontAwesome, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    content: "\f0dd";
+}
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:after {
+    opacity: 1;
+}
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+    opacity: 0;
+}
+
+/*CUSTOM*/
+
+a{
+    color: #2f8fce;
+}
+
+.page-item.active .page-link{
+        background-color: #2f8fce;
+    border-color: #2f8fce;
+}
+
+.page-link{
+    color: #2f8fce;
+}
+
+table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc{
+	background-color:rgba(222, 226, 230, 0.5)
+}
+
+td.sorting_1{
+	background-color:rgba(222, 226, 230, 0.2)
+}
+#table-container {
+        width: 100%;
+    }
+
+.flag {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    text-shadow: 1px 1px 4px #000;
+    }
+
+.de {
+	background-image: url('https://www.worldometers.info/img/flags/gm-flag.gif');
+}
+
+.eu {
+    background-image: url('https://europa.eu/european-union/sites/europaeu/files/docs/body/flag_yellow_high.jpg');   
+}
+
+.ks {
+    background-image: url('https://www.worldometers.info/img/flags/ks-flag.gif');   
+}
+
+.ch {
+    background-image: url('https://www.worldometers.info/img/flags/ch-flag.gif');
+}
+
+.in {
+    background-image: url('https://www.worldometers.info/img/flags/in-flag.gif');
+}
+
+.da {
+    background-image: url('https://www.worldometers.info/img/flags/da-flag.gif');
+}
+
+.uk {
+    background-image: url('https://www.worldometers.info/img/flags/uk-flag.gif');
+}
+
+.fr {
+    background-image: url('https://www.worldometers.info/img/flags/fr-flag.gif');
+}
+
+.fi {
+    background-image: url('https://www.worldometers.info/img/flags/fi-flag.gif');
+}
+
+.it {
+    background-image: url('https://www.worldometers.info/img/flags/it-flag.gif');
+}
+
+.ni {
+    background-image: url('https://www.worldometers.info/img/flags/ni-flag.gif');
+}
+
+.ag {
+    background-image: url('https://www.worldometers.info/img/flags/ag-flag.gif');
+}
+
+.nz {
+    background-image: url('https://www.worldometers.info/img/flags/nz-flag.gif');
+}
+
+.ei {
+    background-image: url('https://www.worldometers.info/img/flags/ei-flag.gif');
+}
+
+.sp {
+    background-image: url('https://www.worldometers.info/img/flags/sp-flag.gif');
+}
+
+.no {
+    background-image: url('https://www.worldometers.info/img/flags/no-flag.gif');
+}
+
+.no {
+    background-image: url('https://www.worldometers.info/img/flags/no-flag.gif');
+}
+
+.sw {
+    background-image: url('https://www.worldometers.info/img/flags/sw-flag.gif');
+}
+
+.ci {
+    background-image: url('https://www.worldometers.info/img/flags/ci-flag.gif');
+}
+
+.co {
+    background-image: url('https://www.worldometers.info/img/flags/co-flag.gif');
+}
+
+.ca {
+    background-image: url('https://www.worldometers.info/img/flags/ca-flag.gif');
+}
+
+.us {
+    background-image: url('https://www.worldometers.info/img/flags/us-flag.gif');
+}
+
+.pl {
+    background-image: url('https://www.worldometers.info/img/flags/pl-flag.gif');
+}
+
+table{
+	margin: 0 auto;
+     width: 100%;
+     clear: both;
+     border-collapse: collapse;
+     table-layout: fixed;
+     /*word-wrap:normal;*/
+     font-size:16px;
+	font-family: 'PT Sans', sans-serif;
+    color:#333333;
+}
+
+tr{
+    height: 50px
+}
+
+#header{
+    width:100%;
+    height:250px;
+    margin: auto 0;
+    background-image: url(../img/table-banner.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+#header-clear{
+    width: 100%;
+    height: 204px;
+}
+
+#header-title{
+    display: inline-block;
+    padding-top:3em;
+    padding-left:3em;
+    width:95%;
+}
+
+#header-title h1{
+    color:#ffffff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-shadow: 1px 1px 8px #333333;
+    font-size:36px;
+}
+
+#header-title p{
+    font-family: 'PT Serif', serif;
+    color:#ffffff;
+    font-size:14px;
+}
+
+#logo{
+    display: inline-flex;
+    margin-top: 3em;
+    width: 5%;
+    margin-left: 3em;
+}
+
+#logo img{
+    height: 30px;
+    width: auto;
+}
+
+.table thead th{
+    border-bottom:2px solid #333333;
+}
+
+div.dataTables_wrapper div.dataTables_length label, div.dataTables_wrapper div.dataTables_filter label{
+    color:white;
+}
+
+th:nth-child(12), td:nth-child(12){
+    display: none;
+}
+
+div.dataTables_wrapper div .dataTables_filter{
+    margin-top:-10px;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width:319px){
+    div.dataTables_wrapper div .dataTables_filter{
+    justify-content:right;
+    text-align: right;
+    -webkit-box-pack: right;
+    }
+}
+
+
+.high-p{background-color:rgba(48, 141, 81, 0.75)}
+
+.priority{background-color:rgba(96, 179, 107, 0.75)}
+
+.support{background-color:rgba(221, 240, 183, 0.75)}
+
+.accept{background-color:rgba(209, 209, 209, 0.8)}
+
+.not-support{background-color:rgba(239, 197, 48, 0.75)}
+
+.oppose{background-color:rgba(232, 173, 54, 0.75)}
+
+.strongly-opp{background-color:rgba(221, 138, 62, 0.75)}
+
+.red-line{background-color:rgba(199, 67, 43, 0.75)}
+
